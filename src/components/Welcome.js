@@ -1,13 +1,11 @@
-import React from "react";
-import "../styles/App.css";
+import React from 'react'
 
-const Welcome = ({ name }) => {
-  return (
-    <div className="welcome-container">
-      <h1 className="welcome-message">Hey {name}!</h1>
-      <h2 className="welcome-subtitle">Welcome to school.</h2>
-    </div>
-  );
-};
+export default function child(props) {
 
-export default Welcome;
+    return (
+        <div>
+            <h1>Hey {props.name}!</h1>
+            <h2>Welcome to School.</h2>
+        </div>
+    )
+}
